@@ -1,0 +1,102 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="container row turnos-bg">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<div class="card-body-new">
+	        <h2 class="card-title text-center mt-3">Nuevo Turno</h2>
+            <div class="recuadro">
+                <form method="POST" class="turnos-content mx-5 mx-xl-0 pl-xl-4">
+                {% csrf_token %}
+               
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="form-group">
+                            <label  class="label_new">Fecha Solicitada</label>
+                            {{ form.fecha_turno }}
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="form-group">
+                            <label  class="label_new">Especialidad</label>
+                            {{ form.especialidad }}
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="form-group">
+                            <label class="label_new">Médico</label>
+                            {{ form.medico }}
+                        </div>    
+                    </div>    
+                </div>          
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">  
+                        <div class="form-group">
+                            <label  class="label_new">Hora del Turno</label>
+                            <select class="form-control turn" name="hora_turno" required id="id_hora_turno">
+                                <option>------------</option>
+                            </select>
+                        </div>
+                    </div>  
+                    <div class="col-xs-12 col-md-6">            
+                        <div class="form-group">
+                            <label  class="label_new">Obra Social</label>
+                            {{ form.obrasocial }}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-5"> 
+                        <div class="form-group">
+                            <label  class="label_new">Nombre y Apellido</label>
+                            {{ form.nombre }}
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label  class="label_new">DNI</label>
+                            {{ form.dni }}
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-2">
+                        <div class="form-group">
+                            <label  class="label_new">Edad</label>
+                            {{ form.edad }}
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-2">
+                        <div class="form-group">
+                            <label  class="label_new">Sexo</label>
+                            {{ form.sexo }}
+                        </div>
+                    </div>
+                </div>                    
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="form-group">
+                            <label  class="label_new">Teléfono</label>
+                            {{ form.telefono }}
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="form-group">
+                            <label  class="label_new">Correo Electrónico</label>
+                            {{ form.mail }}
+                        </div>
+                    </div>
+                </div>   
+                
+                <div class="botones">
+                    <button type="submit" class="btn btn-primary btn-turno">Solicitar</button>
+                    <a href="/dashboard/" class="btn btn-primary btn-turno">Cancelar</a> 
+                </div>
+               
+                </form> 
+            </div>
+             
+        </div>      
+    </div>
+</div>
+
+{% endblock %}
+

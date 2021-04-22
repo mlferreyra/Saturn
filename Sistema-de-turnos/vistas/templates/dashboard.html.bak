@@ -1,0 +1,35 @@
+{%  extends 'main.html' %}
+
+{% block content %}
+<div class="pepega-box">
+  <div class="container-fluid section-box">
+    <div class="row d-flex justify-content-center h-100 align-items-center">
+      <div class="col-4">
+        <div class="d-flex flex-column h-100">
+          <h1>
+            <span class="titulo-box">SATURN</span>
+          </h1>
+          <div class="text-Box">
+            <h3>Bienvenido al Sistema de Gestión de Turnos</h3>
+            <p>La nueva herramienta para acceder a citas médicas de forma rápida y completamente online!</p>
+          </div>
+          {% if cargar_boton%}
+          <a href="/new_turn/" class="btn btn-primary">Solicitar Turno Particular</a>
+          <a href="/turn_ok/" class="btn btn-primary">Ver Turnos Particulares</a>
+          <a href="/listado_del_dia/" class="btn btn-primary ">Ver Turnos del dia</a>
+          {% else %}
+          <a href="/new_turn/" class="btn btn-primary dash ">Solicitar Turno</a>
+          <a href="/turn_ok/" class="btn btn-primary ">Ver mis Turnos</a>
+          {% endif %}
+
+        </div>
+      </div>
+      <div class="col-8">
+        <!-- <img src="../static/imagenes/elwa.png" alt="" class="elwachin"> -->
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

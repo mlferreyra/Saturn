@@ -1,0 +1,73 @@
+* {
+	font-family: 'Baloo Tammudu 2', cursive; 
+}
+
+body {
+	background-image: url(images/fondo.png);
+	background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.register-form {
+	font-weight: 700;
+	margin-top: 1rem;
+}
+
+.form-group-register {
+	margin-top: 1rem;
+}
+
+.form-group-register input{
+	padding-top: 1rem;
+}
+
+.section-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-title {
+	color: #4670FA;
+	font-size: 4rem;
+	font-weight: 700;
+}
+
+.form-group {
+	font-weight: 700;
+	font-size: 1.5rem;
+
+}
+
+.form-check-label {
+	font-weight: 400;
+}
+
+.btn {
+	font-size: 1.1rem;
+	font-weight: 700;
+} 
+
+
+.form-control {
+	height: 3rem;
+	font-size: 1.3rem;
+}
+
+
+.card-link {
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+
+.form-group-register {
+    margin-bottom: .3rem ;
+}
+.sexo {
+    display: block;
+}
+
+li {
+	list-style-type: none;
+}
+

@@ -1,0 +1,46 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="container usuario-bg">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        
+            {% if turno %}
+            <h2 class="welcome text-center">
+                Mis Turnos Solicitados
+            </h2> 
+            <table class="table">
+                <tr>
+                    <th scope="row">DIA </th>
+                    <th scope="row">HORA</th>
+                    <th scope="row">PACIENTE </th>
+                    <th scope="row">ESPECIALIDAD</th>
+                    <th scope="row">MEDICO</th>    
+                    <th scope="row"></th>       
+                </tr>
+                {% for turno in turno %}
+                <tr>
+                    <td>{{turno.fecha_turno}}</td>
+                    <td>{{turno.hora_turno}}</td>
+                    <td>{{turno.nombre}}</td>
+                    <td>{{turno.especialidad.descripcion}}</td>
+                    <td>{{turno.medico.nombre}}</td>
+                    <td>
+                        <a href="/delete_turn/{{turno.TurnoId}}" class="btn btn-danger list">Cancelar</a>      
+                    </td>
+                </tr>
+            
+                {% endfor %}
+            
+            </table>
+            {% else %}
+            <p class="welcome2">No hay Registros Encontrados.</p>
+            {% endif %} 
+            <div class="btn-list">
+                <a href="/new_turn" class="btn btn-primary btn-usuarios">Solicitar turno</a> 
+                <a href="/dashboard" class="btn btn-primary btn-usuarios">Inicio</a>
+                
+            </div>            
+        
+    </div>   
+</div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="delete">
+    <h3 class="welcome2">
+        Su turno para el dia <span class="fecha">{{idturno.fecha_turno}}</span> fue Cancelado con éxito!
+    </h3>
+    <a href="/dashboard" class="btn btn-primary btn-usuarios">Inicio</a>
+    <a href="/turn_ok" class="btn btn-primary btn-usuarios">Ver Mis Turnos</a>    
+</div>
+   
+
+{% endblock %}

@@ -1,0 +1,83 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+    <div class="card-body-new">
+        <h2 class="card-title text-center">Nuevo Turno</h2>
+
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label  class="">Fecha Solicitada</label>
+                {{ form.fecha_turno }}
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="form-group">
+                        <label  class="">Especialidad</label>
+                        {{ form.especialidad }}
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="form-group">
+                        <label class="">Médico</label>
+                        {{ form.medico }}
+                    </div>    
+                </div>    
+            </div>            
+            <div class="form-group">
+                <label  class="">Hora del Turno</label>
+                <select class="form-control turn" name="hora_turno" required id="id_hora_turno">
+                    <option>------------</option>
+                </select>
+            </div>             
+            <div class="form-group">
+                <label  class="">Obra Social</label>
+                {{ form.obrasocial }}
+            </div>
+            <div class="form-group">
+                <label  class="">Nombre y Apellido</label>
+                {{ form.nombre }}
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-8">
+                    <div class="form-group">
+                        <label  class="">DNI</label>
+                        {{ form.dni }}
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="form-group">
+                        <label  class="">Edad</label>
+                        {{ form.edad }}
+                    </div>
+                </div>
+            </div>    
+            
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="form-group">
+                        <label  class="">Teléfono</label>
+                        {{ form.telefono }}
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="form-group">
+                        <label  class="">Correo Electrónico</label>
+                        {{ form.mail }}
+                    </div>
+                </div>
+            </div>   
+            <div class="col-xs-12 col-md-4 column">
+                <div class="form-group">
+                    <label  class="">Sexo</label>
+                    {{ form.sexo }}
+                </div>
+            </div>      
+            <button type="submit" class="btn btn-primary">Registrar</button>
+            <a href="/dashboard/" class="btn btn-primary ">Cancelar</a>
+        </form>        
+    </div>
+
+{% endblock %}
+

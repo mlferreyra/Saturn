@@ -1,0 +1,37 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <img src="{% static '/imagenes/icono.png' %}" alt="" class="img-fluid logo-sa">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="mr-auto navbar-nav">
+      <li class="nav-item active d-none d-lg-block">
+        <a class="nav-link pt-3 pb-0" href="{% url 'dashboard' %}">Saturn<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item d-lg-none">
+        <a class="dropdown-item" href="{% url 'turn_ok' %}">Panel de Usuario</a>}
+      </li>
+      <li class="nav-item d-lg-none">
+        <a class="dropdown-item" href="{% url 'logout' %}">Cerrar Sesión</a>
+      </li>
+    </ul>
+    <div>
+      <ul class="mr-auto navbar-nav">
+        <li class="nav-item active d-none d-lg-block">
+          <span class="nav-link pt-3 pb-0">Hola {{request.user}}</span>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-item dropdown pt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="{% url 'turn_ok' %}">Panel de Usuario</a>
+        <a class="dropdown-item" href="{% url 'logout' %}">Cerrar Sesión</a>
+      </div>
+      
+    </div>
+  </div>
+</nav>  

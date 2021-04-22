@@ -1,0 +1,533 @@
+* {
+	font-family: 'Baloo Tammudu 2', cursive; 
+}
+
+html, body {
+	height: 100%;
+	margin: 0; 
+}
+
+.turnos-bg {
+	background-image: url(../../turnos/static/imagesturnos/eldotorregistro.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.turnos-content {
+	padding-top: 1rem;
+}
+
+.btn-usuarios, .btn-turno, .link-box {
+	color: #fff;
+	font-weight: 700;
+	background-color: #15202b;
+	border-color: #15202b;
+}
+
+.btn-usuarios:hover, .btn-turno:hover, .link-box:hover {
+	background-color: #293D51;
+	border-color: #293D51;
+}
+
+.btn-usuarios:active, .btn-turno:active, .link-box:active {
+	background-color: #293D51 !important;
+	border-color: #293D51 !important;
+}
+
+.turnos-content input {
+	padding-top: .9rem;
+	height: 2rem;
+	border: 1px solid #111;
+}
+
+.turnos-content select {
+	padding-top: .2rem;
+	border: 1px solid #111;
+}
+
+.turnos-content input[type="date"]::-webkit-inner-spin-button {
+	margin: 0;
+}
+.turnos-content input[type="date"]::-webkit-calendar-picker-indicator {
+	margin: 0;
+	padding-bottom: .6rem;
+}
+
+.btn-turno {
+	padding-top: .8rem;
+	width: 7rem;
+	font-weight: 700;	
+}
+
+.card-title {
+	font-weight: 800;
+	font-size: 2.5rem;
+	padding-top: 8rem;
+}
+
+
+.dash-box {
+	background-image: url(imagenes/elwachin.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	height: 100%;
+}
+
+.usuario-bg {
+	background-image: url(../../turnos/static/imagesturnos/form.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	height: 100%;
+}
+
+.btn-usuarios {
+	padding-top: 1rem;	
+}
+
+.welcome {
+	padding-top: 7rem;
+	font-weight: 700;
+}
+
+.section-box {
+	padding-top: 20rem;
+	padding-left: 7rem;
+}
+
+.navbar {
+	background-color: #15202b;
+}
+
+.logo-sa {
+	width: 4rem;
+}
+
+.nav-link {
+	font-size: 2rem;
+	color: #fff;
+	font-size: 1.7rem;
+}
+
+.nav-link:hover {
+	color: #fff;
+}
+
+.navbar-nav {
+	font-weight: 700;
+	list-style: none;
+}
+
+/*.hello {
+	font-size: 1.5rem;
+	color: #fff;
+	padding-top: 1.5rem;
+	font-size: 1.5rem;
+}
+
+.card-body-new{
+	margin-bottom: 90px;
+}
+
+.logout {
+	font-size: 1.5rem;
+}
+
+.titulo-box {
+	font-weight: 700;
+}
+
+.link-box {
+	margin-top: .8rem;
+	width: 30%;
+	padding-top: 1rem;
+	font-weight: 700;
+}
+
+.footer {
+	background-color: #15202b;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 4rem;
+	line-height: 1.8rem;
+}
+
+.navbar-toggler:focus {
+	outline: 1px solid;
+	border-radius: .25rem;
+}
+
+.btn-secondary {
+	background-color: transparent;
+	border-color: transparent;
+	font-size: 1.4rem;
+	padding-top: .8rem;
+}
+
+.btn-secondary:focus {
+	background-color: transparent;
+	border-color: transparent;
+	box-shadow: none;
+}
+
+.btn-secondary:active {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.btn-secondary:hover {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+	background-color: transparent;
+	border-color: transparent;
+	box-shadow: none;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+	box-shadow: none;
+}
+
+.fa-twitter, .fa-facebook-f, .fa-github {
+	font-size: 1.6rem;
+	color: #fff;
+}
+
+.footer-direccion {
+	font-weight: 700;
+	color: #fff;
+}
+
+.fa-map-marker-alt {
+	font-size: 1.5rem;
+	color: #fff;
+}
+
+.fa-phone {
+	font-size: 1.5rem;
+	color: #fff;
+}
+
+.footer-atencion {
+	color: #fff;
+	font-weight: 700;
+}
+
+.fa-bars {
+	color: #fff;
+	padding-top: .4rem;
+}
+
+.navbar-light .navbar-toggler {
+	border-color: #fff;
+}
+
+.footer-atencion:hover {
+	text-decoration: none;
+}
+
+
+.link-box {
+	margin-top: .8rem;
+	width: 30%;
+	padding-top: 1rem;
+	font-weight: 700;
+}
+
+.link-box:hover {
+	background-color: #186426;
+	border-color: #186426;
+}
+
+.dropdown-item {
+	color: #fff;
+}
+
+.navbar-toggler {
+	border: 1px solid #fff;
+}
+
+
+@media (min-width: 992px) {
+	.dropdown-menu {
+		right: 0;
+		left: auto;
+		background-color: #15202b;
+		border: 0;
+		border-radius: 0;
+		padding-top: 2rem;
+		width: 15%;
+		top: auto;
+	}
+
+	.dropdown-item {
+		color: #fff;
+		margin-bottom: 1rem;
+		font-weight: 700;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.dropdown-item:focus,
+	.dropdown-item:hover {
+		background-color: transparent;
+		color: #33b1e3;
+	}
+
+	.dropdown, .dropleft, .dropright, .dropup {
+		position: inherit;
+	}
+
+	.dropdown .dropdown-menu {
+		transition: all 0.7s;
+		overflow: hidden;
+		opacity: 0;
+		z-index: -1;
+	}
+
+	.dropdown.show .dropdown-menu {
+		max-height: 300px;
+		opacity: 1;
+		z-index: 1;
+	}
+}
+
+@media (max-width: 991px) {
+	.dropdown {
+		display: none;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.turnos-bg {
+		background-image: url(../../turnos/static/imagesturnos/fondomediaquery.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+	}
+
+	.usuario-bg {
+		background-image: url(../../turnos/static/imagesturnos/fondomediaquery.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		height: 100%;
+	}
+
+	.dash-box {
+		background-image: url(imagenes/fondobody.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		height: 100%;
+	}
+
+	.titulo-box {
+		color: #fff;
+	}
+
+	.text-box {
+		color: #fff;
+	}
+
+	.btn-usuarios, .btn-turno, .link-box {
+		color: #fff;
+		font-weight: 700;
+		background-color: #15202b;
+		border-color: #15202b;
+	}
+
+	.btn-usuarios:hover, .btn-turno:hover, .link-box:hover {
+		background-color: #293D51;
+		border-color: #293D51;
+	}
+
+	.btn-usuarios:active, .btn-turno:active, .link-box:active {
+		background-color: #293D51 !important;
+		border-color: #293D51 !important;
+	}
+
+	.card-title {
+		color: #fff;
+	}
+
+	label {
+		color: #fff;
+	}
+
+	.dropdown-item:focus,
+	.dropdown-item:hover {
+		background-color: transparent;
+		color: #43F584;
+	}
+
+	.welcome, th {
+		color: #fff;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+	.turnos-bg {
+		background-image: url(../../turnos/static/imagesturnos/fondomediaquery.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		height: 100%;
+	}
+
+	.usuario-bg {
+		background-image: url(../../turnos/static/imagesturnos/fondomediaquery.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		height: 100%;
+	}
+
+	.dash-box {
+		background-image: url(imagenes/fondodashboardquery.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		height: 100%;
+	}
+
+	.section-box {
+		padding-left: 0.9375rem;
+	}
+
+	.card-title {
+		color: #fff;
+	}
+
+	label {
+		color: #fff;
+	}
+
+	.welcome, th {
+		color: #fff;
+	}
+
+	.titulo-box {
+		color: #fff;
+	}
+
+	.text-box {
+		color: #fff;
+	}
+
+	.btn-usuarios, .btn-turno, .link-box {
+		color: #fff;
+		font-size: 700;
+		background-color: #15202b;
+		border-color: #15202b;
+	}
+
+	.btn-usuarios:hover, .btn-turno:hover, .link-box:hover {
+		background-color: #293D51;
+		border-color: #293D51;
+	}
+
+	.btn-usuarios:active, .btn-turno:active, .link-box:active {
+		background-color: #293D51 !important;
+		border-color: #293D51 !important;
+	}
+
+	.dropdown-item:focus,
+	.dropdown-item:hover {
+		background-color: transparent;
+		color: #43F584;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.turnos-bg {
+		background-image: url(../../turnos/static/imagesturnos/fondomediaquery.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		height: 100%;
+	}
+
+	.usuario-bg {
+		background-image: url(../../turnos/static/imagesturnos/fondomediaquery.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		height: 100%;
+	}
+
+	.dash-box {
+		background-image: url(imagenes/fondobody.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		height: 100%;
+	}
+
+	.card-title {
+		color: #fff;
+	}
+
+	label {
+		color: #fff;
+	}
+
+	.section-box {
+		padding-left: 0;
+	}
+
+	.welcome, th {
+		color: #fff;
+	}
+
+	.btn-usuarios, .btn-turno, .link-box {
+		color: #fff;
+		font-size: 700;
+		background-color: #15202b;
+		border-color: #15202b;
+	}
+
+	.btn-usuarios:hover, .btn-turno:hover, .link-box:hover {
+		background-color: #293D51;
+		border-color: #293D51;
+	}
+
+	.btn-usuarios:active, .btn-turno:active, .link-box:active {
+		background-color: #293D51 !important;
+		border-color: #293D51 !important;
+	}
+
+	.dropdown-item:focus,
+	.dropdown-item:hover {
+		background-color: transparent;
+		color: #43F584;
+	}
+}
+
+@media (min-width: 1200px){
+	.turnos-bg {
+		background-image: url(../../turnos/static/imagesturnos/eldotorregistro.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+	}
+}

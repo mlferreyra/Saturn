@@ -1,0 +1,314 @@
+.medico-bg{
+    background-image: url("/static/imagesturnos/fondo2.jpg");
+	background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 81%;
+}
+
+.container{
+    margin-top: 0px !important;
+}
+.volver{
+    margin-left: 15px;
+}
+.botones{
+    text-align: center;
+    font-size: 17px;
+}
+
+.row.search{
+    margin-left: 0px !important;
+}
+
+.delete{
+    background-image: url("/static/imagesturnos/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 81%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.glyphicon-chevron-right:before {
+    color: black;
+}
+
+.glyphicon-chevron-left:before {
+    color: black;
+}
+
+.btn-theme {
+    color: white;
+    background-color: #0000008c;
+    border: 2px solid black;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.carousel-control.left span, .carousel-control.right span {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.usuario-bg {
+	background-image: url("/static/imagesturnos/fondo2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+.card-body-new {
+    margin-bottom: 40px !important;
+    margin-top: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.recuadro{
+    border: 1px solid black;
+    padding: 10px 20px 10px 0;
+    background-color: rgba(20, 108, 165, .4);
+}
+
+.form-control.turn{
+    margin-top: -6px;
+}
+
+.td-turn{
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+.th-turn{
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+.turno_list{
+    padding-top: 110px !important;
+}
+
+.turnos-list{
+    font-weight: 700;
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+
+.logo-saturn {
+	width: 17% !important;
+}
+.logo-sa {
+	width: 3% !important;
+}
+
+.turno_list2{
+    padding-top: 110px !important;
+}
+
+.fecha{
+    color:rgba(255, 0, 0, 0.911);
+}
+
+.text-center{
+    margin-top: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+th{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.table{
+    margin-top: 20px;
+}
+.table td{
+    color: white;
+}
+.listar{    
+    margin-top: 15px;
+}
+.center{
+    text-align: center;
+}
+
+.row-center{
+    margin: 0 auto;
+}
+
+.botton{
+    font-size: 24px !important;
+    text-align: center !important;
+    margin-top: 45px !important;
+    margin-bottom: 20px !important;
+}
+
+.welcome {
+	padding-top: 7rem;
+	font-weight: 700;
+}
+
+.welcome2 {
+    text-align: center;
+    padding-top: 15rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.presentacion{
+    color: black;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.column{
+    padding-left: 0px !important;
+}
+
+.columna {
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.columna-33 {
+    width: 33%;
+}
+
+.card-title {
+    color:white !important;
+}
+
+.btn-list{
+    text-align: center;
+}
+
+.label_new{
+    color: white !important;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px black;
+}
+
+.dropdown-item {
+    font-size: 1rem !important;
+}
+
+.mi_contenedor{
+    margin-top: 60px;
+}
+
+.turnos-list{
+    font-size: 24px; 
+    font-weight: bold; 
+    text-align: center; 
+    margin-top: 45px; 
+    margin-bottom: 20px;
+}
+@media(max-width:767px) {
+    .columna-mobile-100 {
+        width: 100%;
+    }
+
+    footer .redes {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1200px){
+	.turnos-bg {
+		background-image: url("/static/imagesturnos/fondo2.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+    }
+    
+    .usuario-bg {
+		background-image: url("/static/imagesturnos/fondo2.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+        height: 81%;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.turnos-bg {
+		background-image: url("/static/imagesturnos/fondo2.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+    }
+
+    .usuario-bg {
+		background-image: url("/static/imagesturnos/fondo2.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+        
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+	.turnos-bg {
+		background-image: url("/static/imagesturnos/fondo2.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+    }
+    .usuario-bg {
+		background-image: url("/static/imagesturnos/fondo2.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+	}
+
+    .card-body-new {
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (max-width: 767px) {
+	.turnos-bg {
+		background-image: url("/static/imagesturnos/fondo2.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+    }
+
+    .usuario-bg{
+		background-image: url("/static/imagesturnos/fondo2.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+    }
+
+    .btn-turno{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .card-body-new {
+        margin-bottom: 0px !important;
+    }
+}

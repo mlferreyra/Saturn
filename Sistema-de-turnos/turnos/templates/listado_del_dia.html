@@ -1,0 +1,82 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="medico-bg">
+    <div class="row">
+        <div class="col-4">
+            <h2 class="card-title text-center">Listar turnos diarios de Medicos</h2>
+            <form method="POST">        
+                {% csrf_token %}
+                <div class="row search">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="form-group">
+                            <label  class="">Buscar por Médico</label>
+                            <select class="form-control turn" name="listado_medico" required id="id_listado_medico">
+                                <option value="-1">-------------</option>
+                                {% for medico in medicos %}
+                                    <option value="{{medico.medicoId}}">{{medico.nombre}}</option>
+                                {% endfor %}
+                            </select>         
+                        </div>
+                    </div> 
+                    <div class="row row-center">
+                        <div class="col-xs-12 col-md-6">  
+                            <div class="form-group">
+                                <a href="/dashboard/" class="btn btn-primary btn-usuarios volver">Volver</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">  
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-usuarios listar">Buscar</button>
+                            </div>
+                        </div>    
+                    </div>                    
+                </div>
+            </form>            
+        </div>        
+        <div class="mi_contenedor col-8">
+            <div class="col-12">
+                {% if turnos_del_dia %}
+                <div class="turno_list4">
+                    <div id="areaImprimirTurnos">    
+                        <div class="turnos-list">
+                            Turnos para {{nombre_medico}}
+                        </div>    
+                        <table class="table" style="width: 100%;">
+                            <tr>
+                                <th style="border-bottom: 1px solid #dee2e6; text-align: center" class="th-turn" scope="row">DIA </th>
+                                <th style="border-bottom: 1px solid #dee2e6; text-align: center;" class="th-turn" score="row">HORA</th>
+                                <th style="border-bottom: 1px solid #dee2e6; text-align: center;" class="th-turn" scope="row">NOMBRE </th>
+                                <th style="border-bottom: 1px solid #dee2e6; text-align: center;" class="th-turn" scope="row">DNI</th>
+                                <th style="border-bottom: 1px solid #dee2e6; text-align: center;" class="th-turn" scope="row">EDAD</th>
+                                <th style="border-bottom: 1px solid #dee2e6; text-align: center;" class="th-turn" scope="row">SEXO</th>         
+                            </tr>                
+                            {% for turno in turnos_del_dia %}
+                            <tr>
+                                <td style="border-bottom: 1px solid #dee2e6; text-align: center;" class="td-turn">{{turno.fecha_turno}}</td>
+                                <td style="border-bottom: 1px solid #dee2e6; text-align: center;" class="td-turn">{{turno.hora_turno}}</td>
+                                <td style="border-bottom: 1px solid #dee2e6; text-align: center;" class="td-turn">{{turno.nombre}}</td>
+                                <td style="border-bottom: 1px solid #dee2e6; text-align: center;" class="td-turn">{{turno.dni}}</td>
+                                <td style="border-bottom: 1px solid #dee2e6; text-align: center;" class="td-turn">{{turno.edad}}</td>
+                                <td style="border-bottom: 1px solid #dee2e6; text-align: center;" class="td-turn">{{turno.sexo}}</td>
+                            </tr>
+                            {% endfor %}                    
+                        </table>
+                    </div>
+                    {% elif nombre_medico and turnos_del_dia|length == 0 %}
+                    <div class="botton">
+                        No hay turnos registrados para el medico: {{nombre_medico}}
+                    </div>    
+                    {%endif%}    
+                    <div class="center">
+                        {%if turnos_del_dia %}
+                        <button id="imprimirListadoTurnos" class="btn btn-primary btn-usuarios">Imprimir</button>
+                        {%endif%}
+                    </div>    
+                </div>                
+            </div>        
+        </div>          
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,7 @@
+
+<option value="-1">-------------</option>
+
+{% for em in medico_esp %}
+    <option value="{{em.medico.medicoId}}">{{em.medico.nombre}}</option>
+{% endfor %}
+

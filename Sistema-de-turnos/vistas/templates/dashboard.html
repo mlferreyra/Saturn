@@ -1,0 +1,33 @@
+{%  extends 'main.html' %}
+
+{% block content %}
+
+<div class="dash-box">
+  <div class="container-fluid section-box">
+    <div class="row d-flex justify-content-left h-100 align-items-center">
+      <div class="col-12 intro-saturn">
+        <div class="d-flex flex-column h-100">
+          <h1 class="text-center">
+            <span class="titulo-box">Bienvenido</span>
+          </h1>
+          <div class="text-box mx-5 text-center">
+            <p class="tramite">¿Qué trámite desea realizar?</p>
+          </div>
+          {% if cargar_boton%}
+          <div class="d-flex justify-content-center align-items-center">
+            <a href="/new_turn/" class="btn btn-primary btn-usuarios doc">Solicitar Turno Particular</a>
+            <a href="/turn_ok/" class="btn btn-primary btn-usuarios doc">Ver Turnos Particulares</a>
+            <a href="/listado_del_dia/" class="btn btn-primary btn-usuarios doc">Ver Turnos del dia</a>
+          </div>
+          {% else %}
+          <div class="d-flex justify-content-center align-items-center">
+            <a href="/new_turn/" class="btn btn-primary btn-turno">Solicitar Turno</a>
+            <a href="/turn_ok/" class="btn btn-primary btn-turno">Ver Turnos</a>
+          </div>          
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

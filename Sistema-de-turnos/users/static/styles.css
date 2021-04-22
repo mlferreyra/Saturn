@@ -1,0 +1,341 @@
+* {
+	font-family: 'Baloo Tammudu 2', cursive; 
+}
+
+body {
+	background-image: url(images/fondo2.png);
+	background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.register-form {
+	font-weight: 700;
+	margin-top: 1rem;
+	color: #fff;
+}
+
+.btn-info.focus, .btn-info:focus {
+	background-color: transparent;
+	border-color: #fff;
+	box-shadow: none;
+}
+
+.btn-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show>.btn-info.dropdown-toggle {
+	background-color: transparent;
+	border-color: #fff;
+}
+
+.btn-info:not(:disabled):not(.disabled).active:focus, .btn-info:not(:disabled):not(.disabled):active:focus, .show>.btn-info.dropdown-toggle:focus {
+	box-shadow: none;
+}
+
+.form-group-register {
+	margin-top: 1rem;
+}
+
+
+.section-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-title {
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.form-group {
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin-bottom: 0px !important;
+}
+
+.form-check-label {
+	font-weight: 400;
+	color: #fff;
+	padding-left: 6rem;
+}
+
+.form-control {
+	height: 3rem;
+	font-size: 1.3rem;
+	background-color: transparent;
+	color: #fff;
+	text-align: center;
+}
+
+.form-control::placeholder {
+  	color: #fff;
+  	text-align: center;
+}
+
+.fa-user-alt{
+  	position: absolute;
+	margin-left: 1rem;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	padding-top: 2.9rem;
+	color: #fff;
+}
+
+.fa-lock {
+	position: absolute;
+	margin-left: 1rem;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	padding-top: 2.9rem;
+	color: #fff;
+}
+
+.btn-primary {
+	font-size: 1.1rem;
+	font-weight: 700;
+	background-color: transparent;
+	border-color: #fff;
+}
+
+.btn {
+	font-size: 1.1rem;
+	font-weight: 700;
+	background-color: transparent;
+	border-color: #fff;
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+
+
+.btn-primary.focus, .btn-primary:focus {
+	background-color: transparent;
+	border-color: none;
+	box-shadow: none;
+}
+
+.btn-primary:hover {
+	background-color: transparent;
+	border-color: #fff;
+}
+
+.form-control:focus {
+	background-color: transparent;
+	color: #fff;
+	border-color: #fff;
+	box-shadow: none;
+}
+
+.form-check-input {
+	margin-top: .2rem;
+    margin-left: 4.6rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+.btn-registro {
+	color: #fff;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	width: 8.25rem;
+	padding-top: 1rem ;
+}
+
+.btn-registro:hover {
+	color: #fff;
+	text-decoration: none;	
+}
+
+.btn-primary.focus, .btn-primary:focus {
+	border-color: #fff;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+	background-color: transparent;
+	border-color: #fff;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+	box-shadow: none;
+}
+
+.card {
+	background-color: transparent;
+	border: none;
+}
+
+.card-link {
+	font-weight: 700;
+	font-size: 1.5rem;
+	color: #fff;
+}
+
+/*.card-body {
+	padding: 0;
+}*/
+
+.sexo {
+    display: block;
+}
+
+li {
+	list-style-type: none;
+}
+
+.botones-login{
+	text-align: center;
+	margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+	.card-title {
+		font-size: 2.7rem;
+	}
+	.form-control {
+		font-size: 1.3rem;
+	}
+
+	.form-check-label {
+		padding-left: 4rem;
+	}
+	.form-check-input {
+		margin-top: .2rem;
+		margin-left: 2.6rem;
+	}
+	.btn-login {
+		width: 12rem;
+		height: 3rem;
+		font-size: 1rem;
+		margin-left: 6rem;
+	}
+	.card-body {
+		padding-right: 1rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.card-body {
+		padding-right: 4rem;
+	}
+}
+
+
+
+@media (min-width: 992px) {
+	.card-body {
+		padding-right: 11rem;
+	}
+}
+
+@media (min-width: 1400px) {
+	.card-body {
+		margin-top: 0rem;
+		padding: 0;
+	}
+	.regi-card{
+		padding-right: 25rem;
+	}
+	.form-control {
+		padding: 0;
+	}
+	.login-card {
+		margin-top: 3rem;
+		padding-right: 8rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.card-body {
+		padding-right: 4rem;
+		height: 50rem;
+		width: 25rem;
+		padding-left: 4rem;
+		margin: 0 !important;
+	}
+	.card-title {
+		font-size: 1.8rem;
+	}
+	
+	.btn-login {
+		width: 12rem;
+		height: 3rem;
+		font-size: 1rem;
+		margin-left: 2rem;
+	}
+	.form-control {
+		height: 3rem;
+		width: 14rem;
+		font-size: 1rem;
+	}
+	.fa-lock, .fa-user-alt {
+		display: none !important;
+	}
+	.form-check-label {
+		padding-left: 1.6rem;
+		font-size: 1rem;
+	}
+	.form-check-input {
+		margin-top: .4rem;
+		margin-left: .6rem;
+		width: .8rem;
+		height: .8rem;
+	}
+	
+}
+
+@media (min-width: 1920px) {
+	.card-body {
+		padding-right: 1rem;
+	}
+	.title-login {
+		font-size: 6rem;
+	}
+	.title-regi {
+		font-size: 4rem;
+	}
+	.regi-card{
+		padding-right: 25rem;
+	}
+	.form-control {
+		height: 4rem;
+		font-size: 1.8rem;
+		padding: 0;
+	}
+	.fa-lock {
+		padding-top: 3.4rem;
+	}
+	.fa-user-alt {
+		padding-top: 3.4rem;
+	}
+	.form-check-label {
+		padding-left: 11rem;
+		font-size: 1.9rem;
+	}
+	.form-check-input {
+		margin-top: .2em;
+		margin-left: 8.6rem;
+		width: 1.2rem;
+		height: 1.2rem;
+	}
+
+	.btn-registro {
+		padding-top: 1.2rem !important;
+	}
+	.btn-login {
+		font-size: 1.6rem;
+		font-weight: 700;
+		background-color: transparent;
+		border-color: #fff;
+		width: 15rem;
+		height: 4rem;
+		padding: 0;
+	}
+	.login-card {
+		margin-top: 10rem;
+		padding-right: 0rem;
+	}
+}
